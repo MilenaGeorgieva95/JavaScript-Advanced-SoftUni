@@ -5,9 +5,7 @@ function attachEvents() {
   const selectToView = document.querySelector("#posts");
   const viewBtn = document.querySelector("#btnViewPost");
   viewBtn.addEventListener("click", onView);
-  const detailsTitle = document.querySelector("#detailsTitle");
   const ulPostdetails = document.querySelector("#details");
-  const ulComments = document.querySelector("#films");
 
   async function onLoad() {
     const url = `https://swapi.dev/api/${selectCategory.value}`;
