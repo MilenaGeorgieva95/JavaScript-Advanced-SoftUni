@@ -66,7 +66,7 @@ function onEditDelete(event) {
   ];
 
   if (button.textContent == "Delete") {
-    onEditDelete();
+    onDelete();
   }
   if (button.textContent == "Edit") {
     form.elements["title"].value = bookTitle.textContent;
@@ -106,7 +106,7 @@ function onEditDelete(event) {
     }
   }
 
-  async function onEditDelete() {
+  async function onDelete() {
     const options = {
       method: "DELETE",
       headers: {
